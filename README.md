@@ -1,5 +1,5 @@
 # uniappQQmic
-用uni app 框架仿照QQ音乐界面 记录使用uniapp
+用uni app 框架兼容三端[H5端、小程序端、app端]仿照QQ音乐界面 记录使用uniapp
 ***
 - 效果
 ![效果](https://github.com/SuiXiangjun/uniappQQmic/blob/master/myUniApp/static/%E6%9C%AA%E6%A0%87%E9%A2%98-1.jpg?raw=true)
