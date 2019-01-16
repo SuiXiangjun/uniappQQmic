@@ -1,0 +1,13 @@
+@import './color.scss';
+body{
+	font-size:28upx;
+}
+.bgColor {
+	background-color:$mainColor;
+}
+.bgDeepColor{
+	background-color:$deepColor;
+}
+.grayColor{
+	background-color:$grayColor;
+}
