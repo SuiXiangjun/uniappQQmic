@@ -1,5 +1,10 @@
 # uniappQQmic
 用uni app 框架仿照QQ音乐界面 记录使用uniapp
+***
+- 效果
+![效果](https://github.com/SuiXiangjun/uniappQQmic/blob/master/myUniApp/static/%E6%9C%AA%E6%A0%87%E9%A2%98-1.jpg?raw=true)
+
+***
 - 支持es6、下载less即可使用
 - 小程序不支持本地引入iconfont————解决办法换为远程引入字体库或者用image代替 —— 用的第二种
 - 页底固定导航跳转页面只跳转中间部分，uinapp暂时不支持，因为优先兼容微信小程序
@@ -8,3 +13,4 @@
 - 小程序模板内不支持函数调用
 	``` {{$pubFuc.peoNum(val.count)}} ```
 - 钩子函数要用vue的钩子函数不要单用小程序的钩子函数否则只有小程序会生效
+
