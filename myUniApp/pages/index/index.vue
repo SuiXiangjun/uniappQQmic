@@ -16,13 +16,13 @@
 				</view>
 			</view>
 			<view class="used">
-				<view class="usedImg">
+				<view class="usedImg"  @tap="goUrl('../info/index')">
 					<image :src="content.img"></image>
 					<image class="icon" v-if="imgSrc" :src="imgSrc+'icon/sanjiao.png'"></image>
 					<view class="imgTitle">{{content.imgTitle}}</view>
 				</view>
 				<view class="list">
-					<view class="grayColor info" v-for="(val,index) in content.list" :key="index">
+					<view class="grayColor info" v-for="(val,index) in content.list" :key="index"  @tap="goUrl('../new/index?count='+index)">
 						<view class="name">{{val.name}}</view>
 						<view class="disc">{{val.disc}}</view>
 						<image :src="val.src" class="listImg" ></image>
@@ -30,19 +30,19 @@
 				</view>
 			</view>
 		</view>
-		<album :prodata="recommend" changeReturnParams="recom" @change="recChange"></album>
-		<album :prodata="newest"></album>
-		<album :prodata="sole" blockWidth='49.5%'></album>
+		<albumblock :prodata="recommend" changeReturnParams="recom" @change="recChange"></albumblock>
+		<albumblock :prodata="newest"></albumblock>
+		<albumblock :prodata="sole" blockWidth='49.5%'></albumblock>
 	</view>
 </template>
 
 <script>
 import top from '../../components/top'
-import album from '../../components/album'
+import albumblock from '../../components/albumblock'
 
 export default {
 	components:{
-		album,top
+		albumblock,top
 	},
     data() {
         return {
@@ -52,7 +52,7 @@ export default {
 				img:[
 					'../../static/image/1.jpeg',
 					'../../static/image/2.jpeg',
-					'../../static/image/3.gif'
+					'../../static/image/3.jpeg'
 				]
 			},
 			contentBar:[
@@ -67,13 +67,13 @@ export default {
 				imgTitle:'个性电台',
 				list:[
 					{name:"新歌新碟",disc:"神秘嘉宾先生选择新歌",src:'../../static/image/sc2.jpeg'},
-					{name:"数字专辑|票务",disc:"李建老狼联手现场",src:'../../static/image/sc3.jpeg'}
+					{name:"动画片专辑|热映",disc:"李建老狼联手现场",src:'../../static/image/sc3.jpeg'}
 				]
 			},
 			recommend:{
 				title:"为你推荐",
 				list:[
-					{name:"你的独家品味推荐",src:"../../static/image/sc6.gif",count:"53133000",updateTime:"刚刚更新"},
+					{name:"你的独家品味推荐",src:"../../static/image/sc5.jpg",count:"53133000",updateTime:"刚刚更新"},
 					{name:"慢跑随身听",src:"../../static/image/sc7.jpg",count:"210000",updateTime:"刚刚更新"},
 					{name:"失恋解药",src:"../../static/image/sc8.jpg",count:"4000",updateTime:"刚刚更新"},
 					{name:"薛之谦创作歌曲集",src:"../../static/image/sc9.jpg",count:"9200000",updateTime:"刚刚更新"},
@@ -110,7 +110,12 @@ export default {
 				let arry = this.recommend.list.splice(0,2);
  				this.recommend.list=[...this.recommend.list,...arry]
 			}
-		}
+		},
+		goUrl : function (str){
+			uni.navigateTo({
+				url: str
+			});
+		},
     }
 }
 </script>
