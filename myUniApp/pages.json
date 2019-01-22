@@ -3,12 +3,17 @@
 		{
 			"path": "pages/index/index",//"pages/index/index",
 			"style": {
-				"navigationBarTitleText": "QQ音乐"
+				"navigationBarTitleText": "少儿音乐"
 			}
 		},{
 			"path": "pages/info/index",
 			"style": {
-				"navigationBarTitleText": "QQ音乐播放"
+				"navigationBarTitleText": "少儿音乐播放"
+			}
+		},{
+			"path": "pages/new/index",
+			"style": {
+				"navigationBarTitleText": "新歌新专辑"
 			}
 		}
 	],

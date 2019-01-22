@@ -11,3 +11,32 @@ body{
 .grayColor{
 	background-color:$grayColor;
 }
+.borderColorTop{
+	border-top: solid 1px $borderClolor;
+}
+.borderColorBottom{
+	border-bottom: solid 1px $borderClolor;
+}
+.marginTop40{
+	margin-top: 40upx;
+}
+.marginTop30{
+	margin-top: 30upx;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear:after{
+	content: '';
+	display: block;
+	height: 0;
+	line-height: 0;
+	clear: both;
+}
+@-webkit-keyframes rotation{
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(360deg);}
+	}
