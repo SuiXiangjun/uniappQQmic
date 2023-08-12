@@ -13,8 +13,8 @@ data:{Name:"这里是名字",SrcAudio:"音频地址",Author:'作者',describe:"�
 				{{info.Author}} - {{info.Album}}
 			</view>
 		</view>
-		<image class="fr playListGengduo" src="../../static/image/icon/gengduoHui.png"></image>
-		<image class="fr playListBofang" src="../../static/image/icon/bofangHui.png"></image>
+		<image class="fr playListGengduo" src="/static/image/icon/gengduoHui.png"></image>
+		<image class="fr playListBofang" src="/static/image/icon/bofangHui.png"></image>
 		<!-- {{info.SrcAudio}} -->
 	</view>
 </template>
