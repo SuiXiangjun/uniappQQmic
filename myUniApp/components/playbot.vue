@@ -8,8 +8,8 @@ data:{Name:"这里是名字",SrcAudio:"音频地址",Author:'作者',describe:"�
 			<view class="name">Traveling Light</view>
 			<view class="desc">Joel Hanson</view>
 		</view>
-		<image class="icon" src="../../static/image/icon/kaishiH.png"></image>
-		<image class="icon liebiao" src="../../static/image/icon/muluH.png"></image>
+		<image class="icon" src="/static/image/icon/kaishiH.png"></image>
+		<image class="icon liebiao" src="/static/image/icon/muluH.png"></image>
 	</view>
 </template>
 

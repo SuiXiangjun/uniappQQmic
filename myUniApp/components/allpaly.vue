@@ -1,9 +1,9 @@
 <template>
 	<view class="allPlay clear borderColorTop borderColorBottom">
-		<image class="allPlayIcon fl" src="../../static/image/icon/kaishiH.png"></image>
+		<image class="allPlayIcon fl" src="/static/image/icon/kaishiH.png"></image>
 		<view class="allPlayLabel fl">全部播放</view>
-		<image class="allPlayUpdata fr" src="../../static/image/icon/muluHei.png"></image>
-		<image class="allPlayList fr" src="../../static/image/icon/xiazaiHei.png"></image>
+		<image class="allPlayUpdata fr" src="/static/image/icon/muluHei.png"></image>
+		<image class="allPlayList fr" src="/static/image/icon/xiazaiHei.png"></image>
 	</view>
 </template>
 
